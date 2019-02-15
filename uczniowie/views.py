@@ -12,4 +12,14 @@ app = Flask(__name__)
 def index():
     """Strona główna"""
     return render_template('index.html')
+    
+@app.route('/listak')
+def listak():
+    """Lista klas"""
+    return render_template('listak.html')
+    
+@app.route('/listau')
+def listau():
+    """Lista uczniów"""
+    return render_template('listau.html')
 

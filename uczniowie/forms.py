@@ -11,3 +11,4 @@ blad1 = 'To pole jest wymagane'
 
 class UczenForm(FlaskForm):
     pass
+    
