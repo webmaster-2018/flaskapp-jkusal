@@ -16,10 +16,16 @@ def index():
 @app.route('/listak')
 def listak():
     """Lista klas"""
+    klasy = Klasa.select()
     return render_template('listak.html')
     
 @app.route('/listau')
 def listau():
     """Lista uczniów"""
+    uczniowie = Uczen.select()
     return render_template('listau.html')
+    
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 

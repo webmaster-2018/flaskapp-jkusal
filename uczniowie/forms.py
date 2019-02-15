@@ -9,6 +9,7 @@ from wtforms.validators import Required
 blad1 = 'To pole jest wymagane'
 
 
-class UczenForm(FlaskForm):
-    pass
+class KlasaForm(FlaskForm):
+    id = HiddenField("Klasa id")
+    klasa = 
     
